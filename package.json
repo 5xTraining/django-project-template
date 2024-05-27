@@ -1,0 +1,23 @@
+{
+  "name": "django-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently 'tailwindcss -i ./src/styles/style.css -o ./static/build/styles/style.css --watch' 'esbuild ./src/scripts/app.js --bundle --outfile=./static/build/scripts/app.js --watch'",
+    "build": "tailwindcss -i ./src/styles/style.css -o ./static/build/styles/style.css --minify && esbuild ./src/scripts/app.js --minify --bundle --outfile=./static/build/scripts/app.js",
+    "clean": "rm -rf ./static/build/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alpinejs": "^3.14.0",
+    "htmx.org": "^1.9.12"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.21.3",
+    "tailwindcss": "^3.4.3"
+  }
+}

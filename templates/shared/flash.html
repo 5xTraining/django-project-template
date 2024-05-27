@@ -1,0 +1,12 @@
+{% if messages %}
+    {% for message in messages %}
+    <template x-if="show"  x-transition.opacity.duration.300ms x-data="flash_message">
+        <div class="flash">
+            <p class="{{ message.tags }} message">
+                <span>{{ message }}</span>
+                <button @click="close">X</button>
+            </p>
+        </div>
+    </template>
+    {% endfor %}
+{% endif %}

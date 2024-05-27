@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flash {
+  & .message {
+    @apply my-1 rounded px-6 py-4 text-lg flex justify-between items-center;
+  }
+
+  & button {
+    @apply rounded-sm flex p-2 items-center justify-center w-8 h-8;
+  }
+
+  & .success {
+    & button {
+      @apply hover:bg-green-500;
+    }
+
+    @apply text-white bg-django-green;
+  }
+
+  & .error {
+    & button {
+      @apply hover:bg-red-600;
+    }
+
+    @apply text-white bg-red-500;
+  }
+}
