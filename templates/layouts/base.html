@@ -4,18 +4,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token }}" x-data="csrf_token" />
     <title>{% block title %}Python Developers{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'build/styles/style.css' %}">
+    <link rel="stylesheet" href="{% static 'build/styles/style.css' %}" />
     <script src="{% static 'build/scripts/app.js' %}" type="module"></script>
   </head>
   <body class="container mx-auto">
-      {% include "shared/navbar.html" %}
-      {% include "shared/flash.html" %}
+    {% include "shared/navbar.html" %} {% include "shared/flash.html" %}
 
-      <main class="my-2">
-        {% block content %}{% endblock %}
-      </main>
+    <main class="my-2">{% block content %}{% endblock %}</main>
 
-      {% include "shared/footer.html" %}
+    {% include "shared/footer.html" %}
   </body>
 </html>
