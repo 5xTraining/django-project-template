@@ -13,3 +13,6 @@ migrate:
 
 superuser:
 	poetry run python manage.py createsuperuser
+
+prepare:
+	poetry run pre-commit run --all-files

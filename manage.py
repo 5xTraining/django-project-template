@@ -4,8 +4,8 @@ from os import environ as ENV
 
 
 def set_django_env():
-    AVAILABLE_ENVS = ["development", "test", "production"]
-    env = ENV.get("DJANGO_ENV", "development")
+    AVAILABLE_ENVS = ["local", "development", "test", "production"]
+    env = ENV.get("DJANGO_ENV", "local")
     if env not in AVAILABLE_ENVS:
         raise ValueError("Not a valid environment mode.")
 

@@ -2,8 +2,9 @@
 __pycache__
 db.sqlite3
 node_modules/
-.env
-.env.development
+.env*
+!.env.example
 logs/*.log
 static/build/*
 !static/build/.keep
+.ruff_cache/

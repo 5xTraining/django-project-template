@@ -2,9 +2,9 @@
 ASGI configurations
 """
 
-from os import environ as ENV
-from manage import set_django_env
 from django.core.asgi import get_asgi_application
+
+from manage import set_django_env
 
 set_django_env()
 
