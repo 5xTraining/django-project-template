@@ -1,10 +1,10 @@
-from .base import *
+from .base import *  # noqa: F403
 
 # installed app in development mode
-INSTALLED_APPS += []
+INSTALLED_APPS += []  # noqa: F405
 
 # Logs in console
-if DEBUG:
+if DEBUG:  # noqa: F405
     LOGGING = {
         "version": 1,
         "disable_existing_loggers": False,
