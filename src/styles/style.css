@@ -16,7 +16,7 @@
       @apply hover:bg-green-500;
     }
 
-    @apply text-white bg-django-green;
+    @apply text-white bg-green-600;
   }
 
   & .error {

@@ -8,3 +8,4 @@ logs/*.log
 static/build/*
 !static/build/.keep
 .ruff_cache/
+deno.lock

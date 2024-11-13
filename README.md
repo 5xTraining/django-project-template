@@ -19,7 +19,8 @@
 
 ### Backend
 
-- Django
+- Python 3.13.0
+- Django 5.1.3
   - Poetry
 - PostgreSQL
 

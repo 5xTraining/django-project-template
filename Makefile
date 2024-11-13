@@ -31,3 +31,7 @@ lint:
 clean:
 	rm -rf node_modules/ .ruff_cache/ .pytest_cache/
 	find . -type d -name "__pycache__" | xargs rm -rf
+
+.PHONY: commit
+commit:
+	poetry run cz commit
